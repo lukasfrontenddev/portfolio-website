@@ -1,5 +1,9 @@
 # Portfolio Website
 
+<img src="images/websitebanner.png">
+
+---
+
 ### Run Locally
 **Prerequisites:**  Node.js
 1. Install dependencies:
