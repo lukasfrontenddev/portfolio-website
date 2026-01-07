@@ -39,7 +39,7 @@ export const PROJECTS: Project[] = [
     tags: ['Website'],
     imageUrl: 'https://raw.githubusercontent.com/lukasfrontenddev/portfolio-website/refs/heads/main/images/websitebanner.png',
     githubUrl: 'https://github.com/lukasfrontenddev/portfolio-website',
-    liveUrl: '#',
+    liveUrl: 'https://lukasrichter.vercel.app/',
     category: 'web'
   }
 ];
