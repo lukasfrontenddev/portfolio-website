@@ -1,11 +1,18 @@
 import React from 'react';
 
 const TechStack: React.FC = () => {
-  // Extracting unique tool names from the SKILLS constant for the marquee/list
   const tools = [
-    "React", "Angular", "TypeScript", "Node.js", 
-    "Tailwind CSS", "PostgreSQL", "Unity", "C#", 
-    "Unreal Engine", "Blueprints", "Git"
+    // Frontend
+    "React", "Angular", "TypeScript", "Tailwind CSS",
+    
+    // Backend
+    "Node.js", "PostgreSQL", "Git",
+    
+    // AI & Automation
+    "Gemini AI", "n8n", "Vercel AI SDK", "OpenAI API",
+    
+    // Game Dev
+    "Unity", "C#", "Unreal Engine", "Blueprints"
   ];
 
   return (

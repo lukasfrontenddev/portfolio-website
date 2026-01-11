@@ -45,11 +45,24 @@ export const PROJECTS: Project[] = [
 ];
 
 export const SKILLS: Skill[] = [
+  // FRONTEND
   { name: 'React / Angular', level: 'Advanced', category: 'Frontend' },
   { name: 'TypeScript', level: 'Intermediate', category: 'Frontend' },
   { name: 'Tailwind CSS', level: 'Advanced', category: 'Frontend' },
+  { name: 'Vercel AI SDK', level: 'Learning', category: 'Frontend' },
+  
+  // BACKEND
   { name: 'Node.js', level: 'Intermediate', category: 'Backend' },
   { name: 'PostgreSQL', level: 'Beginner', category: 'Backend' },
+  { name: 'Gemini API', level: 'Learning', category: 'Backend' },
+  { name: 'RESTful APIs', level: 'Intermediate', category: 'Backend' },
+  
+  // AI & AUTOMATION (NEW CATEGORY)
+  { name: 'n8n Workflows', level: 'Learning', category: 'AI & Automation' },
+  { name: 'Chatbot Development', level: 'Learning', category: 'AI & Automation' },
+  { name: 'Business Process Automation', level: 'Learning', category: 'AI & Automation' },
+  
+  // GAME DEV
   { name: 'Unity / C#', level: 'Basic', category: 'Game Dev' },
   { name: 'Unreal / Blueprints', level: 'Basic', category: 'Game Dev' }
 ];

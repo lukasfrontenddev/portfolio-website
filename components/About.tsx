@@ -61,7 +61,7 @@ const About: React.FC = () => {
                       <div className="h-1 bg-slate-800 rounded-full overflow-hidden">
                         <div 
                           className="h-full bg-gradient-to-r from-cyan-600 to-blue-500 rounded-full group-hover:from-cyan-400 group-hover:to-cyan-600 transition-all duration-1000"
-                          style={{ width: '100%' }} // Note: Showing as 100% bar but using level label
+                          style={{ width: '100%' }}
                         ></div>
                       </div>
                     </div>

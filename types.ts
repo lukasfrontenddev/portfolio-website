@@ -20,5 +20,5 @@ export interface SocialLink {
 export interface Skill {
   name: string;
   level: string;
-  category: 'Frontend' | 'Backend' | 'Game Dev';
+  category: 'Frontend' | 'Backend' | 'Game Dev' | 'AI & Automation';
 }
