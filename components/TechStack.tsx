@@ -6,13 +6,13 @@ const TechStack: React.FC = () => {
     "React", "Angular", "TypeScript", "Tailwind CSS",
     
     // Backend
-    "Node.js", "PostgreSQL", "Git",
+    "Node.js", "PostgreSQL", "Git", "Python",
     
     // AI & Automation
     "Gemini AI", "n8n", "Vercel AI SDK", "OpenAI API",
     
     // Game Dev
-    "Unity", "C#", "Unreal Engine", "Blueprints"
+    "Unity", "C#", "Unreal Engine", "Blueprints", "C", "C++", "Roblox", "Luau", "Lua"
   ];
 
   return (
