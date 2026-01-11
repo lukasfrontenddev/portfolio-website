@@ -5,6 +5,24 @@ import { LUKAS_BIO, SKILLS } from '../constants';
 const About: React.FC = () => {
   const categories = Array.from(new Set(SKILLS.map(s => s.category)));
 
+  // Dynamic width logic to enforce specific layouts based on item count
+  // This ensures that if there are 4 items, we get a 2x2 grid (2 per line),
+  // and if there are 6 items, we get a 3x2 grid (3 per line), while keeping content centered.
+  const getCardWidthClass = (count: number) => {
+    // For 4 items: enforce 2 per line on desktop
+    // gap-8 is 2rem. Formula: (100% - 1gap)/2 = 50% - 1rem. Using 1.5rem for safety.
+    if (count === 4) return "w-full md:w-[calc(50%-1.5rem)]";
+    
+    // For 6 items: enforce 3 per line on large screens, 2 on medium
+    // gap-8 is 2rem. For 3 items: (100% - 2gaps)/3 = (100% - 4rem)/3 ≈ 33.3% - 1.33rem.
+    if (count === 6) return "w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-1.5rem)]";
+    
+    // Default/Fallback: Fixed width that allows wrapping naturally
+    return "w-full md:w-96";
+  };
+
+  const cardClass = getCardWidthClass(categories.length);
+
   return (
     <>
       {/* About / Bio Section */}
@@ -44,9 +62,9 @@ const About: React.FC = () => {
             <p className="text-slate-400">My specialized toolset for building modern digital products.</p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {categories.map(cat => (
-              <div key={cat} className="bg-slate-900/50 p-8 rounded-3xl border border-slate-800 backdrop-blur-sm">
+              <div key={cat} className={`bg-slate-900/50 p-8 rounded-3xl border border-slate-800 backdrop-blur-sm ${cardClass}`}>
                 <h4 className="text-xs font-bold text-cyan-500 uppercase tracking-[0.2em] mb-8 flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-cyan-500 rounded-full"></span>
                   {cat}
