@@ -18,7 +18,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   {
     name: 'fiverr',
     url: 'https://www.fiverr.com/lukasisa',
-    icon: 'Fiverr',
+    icon: 'DollarSign',
     label: 'Fiverr',
     color: 'bg-emerald-600'
   },
@@ -28,6 +28,13 @@ export const SOCIAL_LINKS: SocialLink[] = [
     icon: 'Briefcase',
     label: 'Contra',
     color: 'bg-orange-500'
+  },
+  {
+    name: 'skool',
+    url: 'https://www.skool.com/@lukas-richter-1023',
+    icon: 'GraduationCap',
+    label: 'Skool',
+    color: 'bg-yellow-500'
   }
 ];
 
