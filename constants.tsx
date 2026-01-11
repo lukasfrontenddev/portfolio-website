@@ -71,7 +71,9 @@ export const SKILLS: Skill[] = [
   
   // GAME DEV
   { name: 'Unity / C#', level: 'Basic', category: 'Game Dev' },
-  { name: 'Unreal / Blueprints', level: 'Basic', category: 'Game Dev' }
+  { name: 'Unreal / Blueprints', level: 'Basic', category: 'Game Dev' },
+  { name: 'Roblox / Luau', level: 'Advanced', category: 'Game Dev' },
+  { name: 'In-house Engine / C/C++', level: 'Intermediate', category: 'Game Dev' }
 ];
 
 export const LUKAS_BIO = {
